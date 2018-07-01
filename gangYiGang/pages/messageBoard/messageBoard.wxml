@@ -1,0 +1,38 @@
+<view class='msg-box'>
+
+  <view class='title-msg'>
+    <text class='title-text'>杭州 VS 南京</text>
+    <progress class='title-progress' percent="50" stroke-width="5" />
+  </view>
+
+  <view class='msg-info'>
+    <text wx:if="{{msgData.length==0}}">暂无留言...^_^</text>
+  </view>
+
+  <!--留言列表-->
+  <view class='list-view'>
+    <view class='item' wx:for="{{msgData}}" wx:key="{{key}}">
+      <text class='text'>{{item.msg}}</text>
+      <view class='item-msg'>
+        <text>{{item.date}}</text>
+        <view class='item-op'>
+          <image wx:if='{{!item.praised}}' class='praise-btn' bindtap='praise' data-index='{{index}}' src='../../../image/praise.png' />
+           <image wx:if='{{item.praised}}' class='praise-btn' bindtap='praise' data-index='{{index}}' src='../../../image/praise_HL.png' /> 
+          <text class='item-count'>{{item.praiseCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--留言区域-->
+  <view  class='send-box'>
+      <textarea auto-height bindinput='changeInputVal' class='input' type='text' placeholder='请留言....' placeholder-class='place-input' value='{{inputVal}}'></textarea>
+    <view class='btn-view'>
+      <button class='add-btn' size='mini' type='primary' bindtap='addMsg'>添加</button>
+    </view>
+  </view>
+
+</view>
+  <view class='clear-btn'>
+  <button bindtap='clear'>清空缓存</button>  
+  </view>

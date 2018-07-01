@@ -1,0 +1,73 @@
+/* pages/messageBoard/messageBoard.wxss */
+
+.title-msg{
+  margin-bottom:50rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.title-text{
+  display: flex;
+  justify-content: center;
+  margin: 30rpx;
+}
+.title-slider{
+   color: #10AEFF;
+   background-color: #f60;
+}
+
+.msg-info {
+  display: block;
+  color: #399;
+}
+
+.item {
+  border-top: 1px dashed #ccc;
+  display: block;
+  margin: 20rpx;
+}
+.text {
+  justify-content: flex-start;
+  word-break: break-all;
+  font-size: 40rpx;
+}
+.item-msg{
+  display: block;
+  font-size: 30rpx;
+  margin: 15rpx;
+}
+.item-op{
+  float: right;
+}
+.praise-btn{
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+.item-count{
+  font-size: 30rpx;
+  float: right;
+}
+
+.send-box {
+  margin: 20rpx;
+}
+.input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.place-input {
+  color: #f60;
+}
+.btn-view {
+  margin-right: 30rpx;  
+  display: block;
+} 
+.add-btn {
+  float: right;
+}
+
+.clear-btn{
+  margin-top: 300rpx;
+  display: block;
+}
