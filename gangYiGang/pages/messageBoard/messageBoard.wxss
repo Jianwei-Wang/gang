@@ -49,25 +49,29 @@
 }
 
 .send-box {
-  margin: 20rpx;
+  margin: 10rpx;
+  position: fixed;
+  display: flex;
+  bottom: 20rpx;
+  right: 20rpx;
+  left: 20rpx;
+  border: 1px solid #ccc;
+  align-items:baseline;
 }
 .input {
-  border: 1px solid #ccc;
-  padding: 5px;
-  border-radius: 5px;
+  
+  border-bottom: 1px solid #ccc;
 }
-.place-input {
+/* .place-input {
   color: #f60;
-}
-.btn-view {
-  margin-right: 30rpx;  
-  display: block;
-} 
+} */
 .add-btn {
+   margin-left: 10rpx; 
   float: right;
+  width: 160rpx;
 }
 
 .clear-btn{
-  margin-top: 300rpx;
+  margin-top: 3300rpx;
   display: block;
 }

@@ -27,9 +27,7 @@
   <!--留言区域-->
   <view  class='send-box'>
       <textarea auto-height bindinput='changeInputVal' class='input' type='text' placeholder='请留言....' placeholder-class='place-input' value='{{inputVal}}'></textarea>
-    <view class='btn-view'>
       <button class='add-btn' size='mini' type='primary' bindtap='addMsg'>添加</button>
-    </view>
   </view>
 
 </view>
